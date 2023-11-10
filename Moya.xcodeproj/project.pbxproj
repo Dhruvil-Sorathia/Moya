@@ -61,6 +61,8 @@
 		7B6A5F942AFE0377007C4E27 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6A5F922AFE0377007C4E27 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B6A5F972AFE03AC007C4E27 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6A5F962AFE03AC007C4E27 /* RxSwift.xcframework */; };
 		7B6A5F982AFE03AC007C4E27 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6A5F962AFE03AC007C4E27 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B6A5F9E2AFE0604007C4E27 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559D567FD0DA37D6CC98FF92 /* Moya.framework */; };
+		7B6A5F9F2AFE0604007C4E27 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 559D567FD0DA37D6CC98FF92 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C32947EA657E981CB15D58C /* TestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACC7B19F3FFC2DEE74E07B /* TestPlugin.swift */; };
 		83B0E400A7562256224CB7FF /* AccessTokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC115388D44D0DB7A753E9BB /* AccessTokenPlugin.swift */; };
 		85850A4122CF5AB50089E731 /* NimbleHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85850A4022CF5AB50089E731 /* NimbleHelpers.swift */; };
@@ -99,6 +101,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		17924DA7239A397DF7BCAE7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37D7E3D7DB2F5106A68DAB51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6C081A4AC105D3F62F3C49;
+			remoteInfo = Moya;
+		};
+		7B6A5FA02AFE0604007C4E27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37D7E3D7DB2F5106A68DAB51 /* Project object */;
 			proxyType = 1;
@@ -169,6 +178,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7B6A5F9F2AFE0604007C4E27 /* Moya.framework in Embed Frameworks */,
 				7B6A5F982AFE03AC007C4E27 /* RxSwift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -309,6 +319,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6A5F9E2AFE0604007C4E27 /* Moya.framework in Frameworks */,
 				7B6A5F972AFE03AC007C4E27 /* RxSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +618,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7B6A5FA12AFE0604007C4E27 /* PBXTargetDependency */,
 			);
 			name = RxMoya;
 			productName = RxMoya;
@@ -994,6 +1006,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B6A5FA12AFE0604007C4E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6C081A4AC105D3F62F3C49 /* Moya */;
+			targetProxy = 7B6A5FA02AFE0604007C4E27 /* PBXContainerItemProxy */;
+		};
 		BBA136F85D7492245F49EF64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RxMoya;
